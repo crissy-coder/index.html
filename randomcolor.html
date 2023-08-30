@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myprogress{
+        background-color:rgb(159, 154, 145) ;
+        position: relative;
+       
+        width: 100%;
+        height:6%;
+
+    }
+    #mybar{
+        background-color: rgb(125, 36, 209);
+        position: fixed;
+        width: 10%;
+        height: 10%;
+        transition: 3s ease-in-out;
+        
+    }
+    img{
+        width: 350px;
+        height:300px;
+    }
+</style>
+<body>
+    <h1>onclick chaning color</h1>
+    <h2 id="text"> the color is :</h2>
+
+    <button id="fill">fill bar</button>
+    <button id="btn">click me</button>
+    <img src="https://img.freepik.com/premium-photo/soft-air-wavy-design-element-hot-red-cold-blue-colors_1053-7379.jpg?w=360" alt="" id="tiggerimage">
+    <button onclick="changeimage()" id="btn2">changeimage</button>
+
+
+    <button onclick="nextimage()" id="btn3">Next image</button>
+    <button onclick="previousimage()" id="btn4">previous image</button>
+
+    <div id="myprogress">
+        <div id="mybar"></div>
+    </div>
+   
+    <script src="randomcolor.js">
+
+    </script>
+</body>
+</html>

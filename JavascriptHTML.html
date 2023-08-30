@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .list{
+            display: none;
+        }
+        .show {display:block;}
+      </style>
+
+    <form action="">
+        <label for="">enter number</label>
+        <input type="text" id="number">
+    </form>
+
+    <h1 id="sample">helo this sample text</h1>
+    <h1 id="btn"> helooooo</h1>
+
+   <input type="text" id="text1" value="enter name here">
+   <input type="text" id="text2">
+   <button id="bttn">Test me</button>
+
+
+     <h4 id="menu">menu</h4>
+   <ul id="list" class="list">
+    <li >home</li>
+    <li >about</li>
+    <li >reach us</li>
+    <li >blog</li>
+   </ul>
+
+   
+ 
+    <script>
+
+document.title = "vikas"
+console.dir(document.domain)
+console.dir(document.URL)
+console.dir(document.head)
+console.dir(document.all)
+console.dir(document.all(6))
+        document.getElementById("menu").onclick = function() {myFunction()};
+         function myFunction(){
+            document.getElementById("list").classList.toggle("show");
+         }
+
+
+
+       function myfunction(){
+        document.getElementById("text2").value = document.getElementById("text1").value;
+       }
+        
+
+        function cube(){
+            let numbers = document.getElementById('number').value;  
+            alert(numbers*numbers*numbers);
+            let sample = document.getElementById("sample")
+        sample.innerHTML = "i am the orginal text"
+        
+       
+            
+        }
+       document.getElementById("btn").addEventListener("click",cubee)
+        function cubee(){
+            document.getElementById("btn").style.backgroundColor = "red";
+            document.getElementById("btn").style.fontSize = "85px";
+            
+            document.getElementById("btn").innerHTML = "helo they how r u"
+        }
+
+
+
+const button = document.getElementById("bttn");
+
+
+button.addEventListener("click",handelclick,{once:true});
+function handelclick(){
+    alert("helo its test text")
+}
+
+
+// setTimeout(function(){
+//     button.removeEventListener("click",handelclick);
+//     console.log("only once tested")
+// },5000)
+
+
+       
+    </script>
+    <button onclick="cube()">getthecube </button>
+    <button onclick="myfunction()">copy 1 to 2</button>
+    
+</body>
+</html>
