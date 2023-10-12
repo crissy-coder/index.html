@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="search for item" id="search">
+
+    <ul id="menu">           
+                      <!-- //songs name -->
+        <li>nelo nanu</li>
+        <li>yesu nadaa</li>
+        <li>seeyonulo</li>
+        <li>ni mahema</li>
+        <li>rakthamu</li>
+        <li>aaradhana</li>
+        <li>aaparadei</li>
+        <li>ninuu chuali</li>
+    </ul>
+
+
+<script src="search.js"></script>
+    <!-- <script>
+            const searchs = document.getElementById('search')
+            const menus = document.getElementById('menu') .getElementsByTagName('li');
+          // if we want to intial multi tag name, id or class just neet to write one [[[document]]]] after that related to particular tag name like class or id or tag  
+
+        
+        search.addEventListener('input', function () {
+
+            const filterValue = searchs.value.toLowerCase();
+
+            for(let i = 0; i < menus.length;i++){
+                const itemText = menus[i].innerText.toLowerCase();
+
+                if(itemText.includes(filterValue)){
+                 menus[i].style.display = "block";
+                    }
+                else{
+                    menus[i].style.display = "none";
+                            }
+
+            }
+
+        })
+        
+        
+        
+          
+
+
+    </script> -->
+</body>
+</html>

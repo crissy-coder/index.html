@@ -26,7 +26,7 @@ const decerementer = () => {
 
     Valuein = Valuein -1
     if(Valuein <= 0){
-        alert("the value below 0 cause SYSTEM DAMAGE !!")
+        // alert("the value below 0 cause SYSTEM DAMAGE !!")
         Valuein  = 0
         
     }
@@ -34,3 +34,8 @@ const decerementer = () => {
     num.innerHTML = Valuein;
     
 }
+
+
+const sumbit = document.getElementById("submit")
+
+submit

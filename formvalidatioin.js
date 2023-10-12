@@ -1,20 +1,28 @@
 
-
+const button = document.getElementById('btn4')
+const Submit  = document.getElementById('submit')
 
 button.addEventListener('click',() => {
-    button = check();
+    button = checker(event);
 })
 
-const check = () => {
-    const button = document.getElementById('btn4')
-const Name = document.myform.name.value
-const Mail = document.myform.mail.value
-const Password = document.myform.value
-    if(Name != null && Password.lenght <= 8){
-        alert("thank you for submitting")
+const checker = (event) =>{
+    
+
+    event.preventDefault();
+    const Name = document.getElementById('names')
+    const Mail = document.getElementById('mail')
+    const pass = document.getElementById('password')
+
+    if(Name.value.length >= 4 && pass.value.length >= 8){
+        alert("thank your  applicatio as been receveid")
+        
     }
     else{
-        alert("check the form twice")
+        alert("invlaid form fill or unfilled")
+        ;
     }
+    
+
    
 }
